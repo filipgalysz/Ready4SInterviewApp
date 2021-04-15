@@ -1,0 +1,17 @@
+<div class="slider">
+  <ngx-slick-carousel
+    class="carousel"
+    #slickModal="slick-carousel"
+    [config]="slideConfig"
+    (afterChange)="afterChange($event)"
+    (beforeChange)="beforeChange($event)"
+  >
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+      <img src="{{ slide.img }}" alt="" width="100%" />
+      <span class="currency"
+        >{{ allCurrencies[index].base }} -> {{ allCurrencies[index].symbols }}
+        {{ allCurrencies[index].value }}</span
+      >
+    </div>
+  </ngx-slick-carousel>
+</div>
