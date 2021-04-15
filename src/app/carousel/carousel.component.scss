@@ -1,10 +1,16 @@
 .slider {
   position: relative;
 }
+.slide{
+  position:relative;
+}
 .currency {
-  position: absolute;
-  z-index: 10;
-  top: 50px;
+  left: 0;
+  position:absolute;
+  text-align:center;
+  top: 45%;
+  width: 100%;
+ z-index: 10;
   color: white;
-  font-size: 48px;
+  font-size: 50px;
 }

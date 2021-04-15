@@ -9,8 +9,17 @@ import { MatSliderModule } from '@angular/material/slider';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { CarouselComponent } from './carousel/carousel.component';
+import { HomeComponent } from './home/home.component';
+import { GraphComponent } from './graph/graph.component';
+import { MatButtonModule } from '@angular/material/button';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 @NgModule({
-  declarations: [AppComponent, CarouselComponent],
+  declarations: [
+    AppComponent,
+    CarouselComponent,
+    HomeComponent,
+    GraphComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -19,6 +28,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     MatSliderModule,
     SlickCarouselModule,
     MatToolbarModule,
+    MatButtonModule,
+    NgxChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

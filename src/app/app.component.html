@@ -1,8 +1,9 @@
 <mat-toolbar color="primary">
   <span>Ready4S Interview Application</span>
+  <button routerLink="/" mat-raised-button class="navigation">Home</button>
+  <button routerLink="/graph" mat-raised-button class="navigation">
+    Graph
+  </button>
 </mat-toolbar>
 
-<app-carousel></app-carousel>
-
-<h1 class="eurpln">EUR -> PLN {{ EurPln.rates.PLN | json }}</h1>
 <router-outlet></router-outlet>

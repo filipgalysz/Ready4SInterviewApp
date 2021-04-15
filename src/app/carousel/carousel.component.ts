@@ -49,7 +49,7 @@ export class CarouselComponent implements OnInit {
   afterChange(e: any) {}
 
   beforeChange(e: any) {
-    if (this.index == 3) {
+    if (this.index == 2) {
       this.index = 0;
     } else {
       this.index++;
